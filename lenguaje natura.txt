@@ -1,0 +1,156 @@
+1
+NombreAlgoritmo: Conversión de unidades de longitud
+
+Entrada: un número real en centímetros.
+
+Salida: un número real que representa la entrada convertida a pulgadas.
+
+Pasos: 
+1. Leer el valor de los centímetros.
+2. Si el valor  del punto 1 es 0, se imprime un mensaje que indique que el valor debe ser diferente a 0 y se cancela la ejecución del programa.
+3. Si el punto 2 no se cumple, entonces dividimos el valor de los centímetros entre 2.54.
+4. Mostramos en un mensaje el resultado de la operación del punto 3.
+
+-------------------------------------------------------------------------------------------------------
+
+2
+NombreAlgoritmo: Hora futura 
+
+Entrada: un número que represente la hora actual y otro que represente las que se van a adicionar.
+
+Salida: Mostrar el resultado de la hora futura.
+
+Pasos:
+1. Leer la hora actual.
+2. Leer las horas adicionales. 
+3. Sumar la hora actual con las hora adicionales. 
+4. Si la suma de las horas es igual o menor a 24 horas, esa es la hora futura.
+5. Si la suma de las horas es mayor a 24, entonces el total de horas se divide en 24.
+6. El cociente de la operación anterior (paso 5) lo dividimos entre 1 y nos quedamos con el módulo de dicha operación.
+7. El el módulo de la operación pasada (paso 6) se multiplican por 24.
+8. Se muestra en un mensaje el resultado de la operación 7 como la hora futura.
+
+-------------------------------------------------------------------------------------------------------
+
+3
+NombreAlgoritmo:  Qué nota necesito 
+
+Entrada: Las nota de los certamenenes 1, 2 y la nota del laboratorio.
+
+Salida: La nota que necesita para aprobar.
+
+Pasos: 
+1. Leer la nota del certamen 1.
+2. Leer la nota del certamen 2.
+3. Leer la nota del laboratorio.
+4. De la fórmula para hallar la nota final (NF), despejamos el promedio de certámenes (NC), teniendo en cuenta que el promedio de laboratorio  es la nota de laboratorio. La nueva fórmula es NC = (60-(NL * 0.3)) / 0.7, esto nos da como resultado la nota necesaria en el promedio de certámenes.
+5. En la fórmula del promedio de certámenes (NC) debemos despejar la nota de certamen 3 (C3) para saber su valor. La nueva fórmula es C3 = (NC * 3) - (C1 + C2).
+6. Mostrar el resultado del punto 5 como la nota mínima necesaria para pasar; si el resultado es mayor a 100, perdió la materia.
+
+-------------------------------------------------------------------------------------------------------
+
+4
+NombreAlgoritmo: Número inverso
+
+Entrada: un número entero de 3 cifras.
+
+Salida: el número de entrada pero en orden inverso.
+
+Pasos:
+1. Leer el número de 3 dígitos.
+2. Dividir el número de 3 dígitos entre 10 y tomar el residuo.
+3. Dividir el número de 3 dígitos entre 10. Tomar la parte entera y dividirla entre 10. Tomar el residuo.
+4. Dividir el número de 3 dígitos entre 10. Tomar la parte entera y dividirla entre 10. Tomar la parte entera y dividirla nuevamente entre 10. Tomar el residuo.
+5. Multiplicar la primera variable por 100, la segunda por 10 y la tercera por 1.
+6. Sumar el total de las 3 variables.
+
+-------------------------------------------------------------------------------------------------------
+
+5
+NombreAlgoritmo: Años bisiestos 
+
+Entrada: un número entero.
+
+Salida: Un mensaje que indique si el año es bisiesto o no.
+
+Pasos:
+1. Leer el número que representa el año.
+2. si el año es mayor a 1582, entonces el validamos que el modulo del año entre 400 sea 0 o que el modulo del año entre 4 sea 0 y que el modulo del año entre 100 sea diferente a 0, si cumple estas reglas el año es bisiesto, so no cumple no lo es.
+3. Si el año es menor a 1582, entonces validamos el modulo del año entre 4 sea igual a 0, si lo es el año es bisiesto, si no, no.
+4. Mostrar el mensaje indicando si el año es bisiesto o no.
+
+-------------------------------------------------------------------------------------------------------
+
+6
+NombreAlgoritmo: Edad
+
+Entradas: día, mes y año actual; día, mes y año de nacimiento.
+
+Salida: Mostrar un mensaje que indique la edad de la persona.
+
+Pasos: 
+1. Leer el día actual.
+2. Leer el mes actual.
+3. Leer el año actual.
+4. Leer el día de nacimiento.
+5. Leer el mes de nacimiento.
+6. Leer el año de nacimiento.
+7. Definir un solo valor para los días que tiene cada mes, en este caso 30 días van a tener todos los meses, para evitar el Paso de pedir todos esos datos.
+8. Restar el día actual al día de nacimiento, el resultado lo guardamos en una variable, a esto lo llamaremos día calculado.
+9. Restar el mes actual al mes de nacimiento, el resultado lo guardamos en una variable , a esto lo llamaremos mes calculado.
+10. Restar el año actual al año de nacimiento, el resultado los guardamos en una variable, a esto lo llamaremos año calculado.
+11. Si el día calculado es menor a 0, entonces le restamos un mes al mes calculado y al día calculado le reasignamos el valor, para ello le restamos a los 30 días del mes, al valor absoluto de los días calculados, para obtener los días del mes anterior.
+12. Si el día actual es menor al día de nacimiento y el mes actual en igual al mes de nacimiento, entonces al año calculado le restamos un año, porque aún no se ha cumplido años.
+13. Si el día actual es mayor al día de nacimiento pero el mes actual es menor al mes de nacimiento, entonces al año calculado le restamos un año, porque aún no se ha cumplido años.
+14.  Si el mes calculado es menor a 0 o sea un número negativo, quiere decir que a los 12 meses que tiene un año, de debo restar el valor absoluto del número negativo de los meses calculados, para retroceder los meses que sean necesarios.
+15. Mostrar un mensaje que le indique la edad de la persona.
+
+-------------------------------------------------------------------------------------------------------
+
+7
+NombreAlgoritmo: Determinar par
+
+Entradas: Un número entero.
+
+Salida: un mensaje indicando si el número es par o impar.
+
+Pasos:
+1. Leer el número
+2. Si el núm se muestra un mensaje indicando que ingrese un número diferente de 0 y cerrar el programa.
+3. Si el paso 2 no se cumple, entonces se obtiene el módulo resultante de dividir el número de entrada entre 2, si el módulo es 0, entonces el número es par, si el módulo es diferente a 0, entonces el número es impar.
+4. Mostrar en un mensaje la salida del paso 3.
+
+-------------------------------------------------------------------------------------------------------
+
+8
+NombreAlgoritmo: Tiempo de viaje 
+
+Entradas: Un número por cada tramo 
+
+Salida: Tiempo total del viaje, expresado en horas y minutos.
+
+Pasos: 
+1. Leer el tiempo de cada tramo.
+2. Si el valor del primer tramo es 0, el programa se finaliza.
+2. Leer el valor de los tramos hasta que uno de ellos sea 0, entonces el programa deja de pedir datos y pasa al paso 3.
+3. Sumar el valor de los tramos. 
+4. Dividimos el resultado de la suma de los tramos entre 60 minutos.
+5. El cociente de la divición anterior lo dividimos entre 1 y tomamos el módulo de dicha operación.
+6. Al cociente de la divición del paso 4 le restamos el modulo hallado en el paso 5, para obtener la hora.
+7. El módulo hallado en el paso 5 lo multiplicamos por 60 minutos, así obtenemos los minutos.
+8. Mostramos un mensaje indicando la hora y los minutos que dura  el viaje.
+
+-------------------------------------------------------------------------------------------------------
+
+9
+NombreAlgoritmo: Parte decimal 
+
+Entrada: Un número decimal
+
+Salida: La parte decimal del número ingresado.
+
+Pasos: 
+1. Leer el número.
+2. Si el número es un entero, mostramos un mensaje indicando que debe ser un decimal, cerramos el programa 
+3. Si el paso 2 no se cumple, dividimos el valor absoluto del número ingresado entre 1, el módulo de dicha operación es la parte decimal.
+4. Mostramos un mensaje indicando la parte decimal.
